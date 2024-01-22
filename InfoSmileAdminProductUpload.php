@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     if ($conn->query($sql) === TRUE) {
                         echo "Data stored successfully.";
-                        header("Location: /InfoSmile/NewPathivara/InfoSmileAdminProductView.php");
+                        header("Location: InfoSmileAdminProductView.php");
                         exit();
                     } else {
                         echo "Error: " . $sql . "<br>" . $conn->error;
@@ -73,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         }
         else {
-            window.location.href = '/InfoSmile/NewPathivara/Admin/login.html';
+            window.location.href = 'Ad/login.html';
         }
     });
 

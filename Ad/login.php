@@ -28,7 +28,7 @@ $dbname = "u521780023_eliza";
         header("Location: index.php");
     } else {
         // Invalid login, redirect back to login.html
-        header("Location: /InfoSmile/NewPathivara/Admin/login.html");
+        header("Location: login.html");
     }
 
     $conn->close();

@@ -88,7 +88,7 @@ $conn->close();
 
         }
         else {
-            window.location.href = '/InfoSmile/NewPathivara/Admin/login.html';
+            window.location.href = 'Ad/login.html';
         }
     });
 
