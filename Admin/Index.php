@@ -224,8 +224,8 @@ function getContentByName($name, $jsonData) {
 
         <input type="submit" value="Submit">
 
-        <a href="/Admin/InfoSmileAdminProductUpload.html" class="small-button">Add Products</a>
-        <a href="/InfoSmileAdminProductView.php" class="small-button">View Products</a>
+        <a href="/InfoSmile/NewPathivara/Admin/InfoSmileAdminProductUpload.html" class="small-button">Add Products</a>
+        <a href="/InfoSmile/NewPathivara/InfoSmileAdminProductView.php" class="small-button">View Products</a>
     </form>
   
 </body>
@@ -243,7 +243,7 @@ function getContentByName($name, $jsonData) {
             }
             else
             {
-                window.location.href = 'login.html';
+                window.location.href = '/InfoSmile/NewPathivara/Admin/login.html';
             }
         });
 
