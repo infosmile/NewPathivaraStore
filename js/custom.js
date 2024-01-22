@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 }
             };
-            xhr.open('GET', '/InfoSmile/NewPathivara/php/getPageContent.php', true);
+            xhr.open('GET', './php/getPageContent.php', true);
 
             xhr.send();
         }
@@ -163,7 +163,7 @@ function fetchDataAndDisplayMattressProducts() {
                     }
                 }
             };
-            xhr.open('GET', '/InfoSmile/NewPathivara/php/getMattressProducts.php', true);
+            xhr.open('GET', './php/getMattressProducts.php', true);
 
             xhr.send();
         }
@@ -222,7 +222,7 @@ document.getElementById("mattressProducts").innerHTML = htmlString +'</div>';
                     }
                 }
             };
-            xhr.open('GET', '/InfoSmile/NewPathivara/php/getCurtainsProducts.php', true);
+            xhr.open('GET', './php/getCurtainsProducts.php', true);
 
             xhr.send();
         }
@@ -279,7 +279,7 @@ document.getElementById("curtainProducts").innerHTML = htmlString2+'</div>';
                     }
                 }
             };
-            xhr.open('GET', '/InfoSmile/NewPathivara/php/getOtherProducts.php', true);
+            xhr.open('GET', './php/getOtherProducts.php', true);
 
             xhr.send();
         }
@@ -336,7 +336,7 @@ function fetchDataAndDisplayFeaturedProducts() {
                     }
                 }
             };
-            xhr.open('GET', '/InfoSmile/NewPathivara/php/getFeaturedProducts.php', true);
+            xhr.open('GET', './php/getFeaturedProducts.php', true);
 
             xhr.send();
         }
