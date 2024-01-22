@@ -36,9 +36,10 @@
 <?php
 // Replace with your database connection details
 $host = "localhost";
-$username = "root";
-$password = "";
-$database = "test";
+$username = "u521780023_eliza";
+$password = "azam1azam";
+$database = "u521780023_eliza";
+
 
 // Create a connection
 $conn = new mysqli($host, $username, $password, $database);

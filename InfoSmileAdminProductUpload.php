@@ -31,7 +31,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if (move_uploaded_file($_FILES["productImage"]["tmp_name"], $targetFile)) {
                     // Store the data in a table (you should replace this with your database connection and query)
                     // For example, using MySQL:
-                    $conn = new mysqli("localhost", "root", "", "test");
+                    $conn = new mysqli("localhost", "u521780023_eliza", "azam1azam", "u521780023_eliza");
+
 
                     if ($conn->connect_error) {
                         die("Connection failed: " . $conn->connect_error);
