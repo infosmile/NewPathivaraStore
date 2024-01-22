@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
 
 // Fetch data from the table
-$sql = "SELECT * FROM infosmileNewPathivaraPagecontent";
+$sql = "SELECT * FROM  infosmilenewpathivarapagecontent";
 $result = $conn->query($sql);
 
 // Store data in an array
