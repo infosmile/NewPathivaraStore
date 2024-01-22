@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Digitf</title>
+  <title>New Pathivara</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
@@ -27,6 +27,7 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <script src="js/custom.js"></script>
 </head>
 
 <body class="sub_page">
@@ -49,29 +50,15 @@
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About</a>
+                <a class="nav-link" href="index.html#aboutsection"> About</a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="shop.html">Shop </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="furniture.html"> Furniture </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact us</a>
+                <a class="nav-link" href="index.html#contactsection">Contact us</a>
               </li>
             </ul>
-            <div class="user_option">
-              <a href="">
-                <img src="images/user.png" alt="">
-                <span>
-                  Login
-                </span>
-              </a>
-              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
-            </div>
           </div>
           <div>
             <div class="custom_menu-btn ">
@@ -102,80 +89,78 @@
   <section class="brand_section layout_padding">
     <div class="container">
       <div class="heading_container">
-        <h2>
-          Featured Brands
-        </h2>
+
+        <button onclick="showMattressArea()" class="brand-btn">
+          Mattress
+        </button>
+
+        <button onclick="showCurtainArea()" class="brand-btn">
+          Curtains
+        </button>
+
+        <button onclick="showOtherArea()" class="brand-btn">
+          Others
+        </button>
+
       </div>
-      <div class="brand_container layout_padding2">
-        <div class="box">
-          <a href="">
-            <div class="new">
-              <h5>
-                New
-              </h5>
-            </div>
-            <div class="img-box">
-              <img src="images/slider-img.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h6 class="price">
-                $100
-              </h6>
-              <h6>
-                Chair
-              </h6>
-            </div>
-          </a>
-        </div>
-        <div class="box">
-          <a href="">
-            <div class="img-box">
-              <img src="images/slider-img.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h6 class="price">
-                $100
-              </h6>
-              <h6>
-                Chair
-              </h6>
-            </div>
-          </a>
-        </div>
-        <div class="box">
-          <a href="">
-            <div class="img-box">
-              <img src="images/slider-img.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h6 class="price">
-                $100
-              </h6>
-              <h6>
-                Chair
-              </h6>
-            </div>
-          </a>
-        </div>
-        <div class="box">
-          <a href="">
-            <div class="img-box">
-              <img src="images/slider-img.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h6 class="price">
-                $100
-              </h6>
-              <h6>
-                Chair
-              </h6>
-            </div>
-          </a>
-        </div>
-      </div>
-      <a href="" class="brand-btn">
-        See More
-      </a>
+
+      <script>
+        function showMattressArea() {
+         document.getElementById("mattressarea").style.display='inline';
+         document.getElementById("curtainarea").style.display = 'none';
+         document.getElementById("otherarea").style.display = 'none';
+        }
+
+        function showCurtainArea() {
+            document.getElementById("mattressarea").style.display = 'none';
+            document.getElementById("curtainarea").style.display = 'inline';
+            document.getElementById("otherarea").style.display = 'none';
+          } 
+
+          function showOtherArea() {
+              document.getElementById("mattressarea").style.display = 'none';
+              document.getElementById("curtainarea").style.display = 'none';
+              document.getElementById("otherarea").style.display = 'inline';
+            }
+
+      </script>
+
+
+
+      <div class="mattressarea" id="mattressarea"> 
+
+<span id="mattressProducts">
+
+</span>
+
+</div>
+
+
+
+<div class="curtainarea" id="curtainarea" style="display:none">
+
+
+<span id="curtainProducts">
+
+</span>
+
+
+</div>
+
+
+
+<div class="otherarea" id="otherarea" style="display:none">
+  
+
+  <span id="otherProducts">
+  
+  </span>
+
+
+</div>
+
+
+
     </div>
   </section>
 
@@ -187,7 +172,7 @@
     <div class="container">
       <div class="info_logo">
         <h2>
-          Digitf
+          New Pathivara
         </h2>
       </div>
       <div class="row">

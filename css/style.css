@@ -1088,6 +1088,33 @@ a:focus {
   display: 'none';
 }
 
+.brand-btn
+{
+  margin-left: 10px;;
+}
+
+
+.mattressarea
+{
+display:'inline';
+}
+
+.curtainarea
+{
+display:'none';
+}
+
+.trendingImage
+{
+  height:200px;
+  width:150px;
+}
+
+.img-box img
+{
+height:150px;
+width:200px;
+}
 
 @media screen and (max-width: 600px) {
 #introVideovideo

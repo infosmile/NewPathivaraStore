@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="file"] {
+            margin-bottom: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="/InfoSmileAdminProductUpload.php" method="post" enctype="multipart/form-data">
+
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" name="productName" required>
+
+        <label for="productCategory">Product Category:</label>
+        <select id="productCategory" name="productCategory" required>
+            <option value="Mattress">Mattress</option>
+            <option value="Curtains">Curtains</option>
+            <option value="Others">Others</option>
+            <option value="InternalContent">InternalContent</option>
+        </select>
+
+        <label for="productPrice">Product Price:</label>
+        <input type="number" id="productPrice" name="productPrice" required>
+
+        <label for="productImage">Product Image:</label>
+        <input type="file" id="productImage" name="productImage" accept="image/*" required>
+
+        <label for="productTag">Product Tag:</label>
+        <select id="productTag" name="productTag" required>
+            <option value="-">None</option>
+            <option value="Featured">Featured</option>
+
+        </select>
+
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
+
+
+<script>
+    // Check for existing username and password cookies on page load
+    document.addEventListener('DOMContentLoaded', function () {
+        const savedUsername = getCookie('pathivarausername');
+        const savedPassword = getCookie('pathivarapassword');
+
+        if (savedUsername && savedPassword) {
+
+        }
+        else {
+            window.location.href = 'login.html';
+        }
+    });
+
+    // Function to get cookie value by name
+    function getCookie(name) {
+        const cookies = document.cookie.split(';');
+        for (const cookie of cookies) {
+            const [cookieName, cookieValue] = cookie.trim().split('=');
+            if (cookieName === name) {
+                return cookieValue;
+            }
+        }
+        return null;
+    }
+
+    // Display error message if provided in the URL (e.g., login.php?error=1)
+    const urlParams = new URLSearchParams(window.location.search);
+    const errorMessage = urlParams.get('error');
+
+    if (errorMessage) {
+        document.getElementById('errorMessage').textContent = 'Invalid username or password. Please try again.';
+    }
+</script>
