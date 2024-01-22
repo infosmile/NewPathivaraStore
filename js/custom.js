@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 }
             };
-            xhr.open('GET', '/php/getPageContent.php', true);
+            xhr.open('GET', '/InfoSmile/NewPathivara/php/getPageContent.php', true);
 
             xhr.send();
         }
