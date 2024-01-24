@@ -1,10 +1,6 @@
 <?php
 // Database connection parameters
-// include '../php/sql.php';
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
+ include '../php/sql.php';
 
 $jsonData = "";
 
