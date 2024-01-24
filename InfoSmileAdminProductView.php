@@ -34,11 +34,12 @@
 <body>
 
 <?php
+include 'php/sql.php';
 // Replace with your database connection details
-$host = "localhost";
-$username = "u521780023_eliza";
-$password = "azam1azam";
-$database = "u521780023_eliza";
+$host = $servername;
+$username = $username;
+$password = $password;
+$database = $dbname;
 
 
 // Create a connection

@@ -2,10 +2,7 @@
 ini_set('log_errors', 1);
 
 // Database connection parameters
-$servername = "localhost";
-$username = "u521780023_eliza";
-$password = "azam1azam";
-$dbname = "u521780023_eliza";
+include '../php/sql.php';
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -40,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Redirect back to the form after updating
-    header("Location: ./");
+    header("Location: ../index.html");
     exit();
 }
 

@@ -1,10 +1,8 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Replace these database connection details with your actual database credentials
-    $servername = "localhost";
-$username = "u521780023_eliza";
-$password = "azam1azam";
-$dbname = "u521780023_eliza";
+   include '../php/sql.php';
+echo $servername;
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -25,7 +23,7 @@ $dbname = "u521780023_eliza";
         // Match found, set cookies and redirect to index.php
         setcookie("pathivarausername", $inputUsername, time() + 3600, "/");
         setcookie("pathivarapassword", $inputPassword, time() + 3600, "/");
-        header("Location: index.php");
+        header("Location: index.html");
     } else {
         // Invalid login, redirect back to login.html
         header("Location: login.html");
