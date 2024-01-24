@@ -104,8 +104,10 @@ document.addEventListener('DOMContentLoaded', function () {
                document.getElementById("footerInformationContent").innerHTML=getValueByName("footerInformationContent", jsonData);
 
                //googleMap
-               document.getElementById("googleMap").src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=" + getValueByName("aboutshopaddress", jsonData);
-         }
+               //document.getElementById("googleMap").src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=" + getValueByName("aboutshopaddress", jsonData);
+         document.getElementById("googleMap").src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=27%C2%B043%2715.0%22N%2085%C2%B021%2756.7%22E";
+              }
+
 
 
 
