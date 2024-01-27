@@ -65,7 +65,8 @@ if ($result->num_rows > 0) {
         echo '<p><strong>Product Category:</strong> ' . $row["ProductCategory"] . '</p>';
         echo '<p><strong>Product Price:</strong> Rs.' . $row["ProductPrice"] . '</p>';
         echo '<p><strong>Product Tag:</strong> ' . $row["ProductTag"] . '</p>';
-        echo '<p><strong>Product Tag:</strong> ' . 'images/' . $row["ProductImage"] . '</p>';
+        echo '<p><strong>Product Image:</strong> ' . 'images/' . $row["ProductImage"] . '</p>';
+        echo '<a href="php/deleteproduct.php?item_id='.$row["ProductId"].'">Delete</a>';
         echo '</div>';
     }
 } else {

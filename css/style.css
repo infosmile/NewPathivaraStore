@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
+  margin: 0;
 }
 
 .layout_padding {
@@ -57,23 +58,13 @@ body {
 /*header section*/
 .hero_area {
   height: 100vh;
-  background-image: url(../images/hero-bg.jpg);
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
   overflow: hidden;
 }
 
-.hero_area::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 45%;
-  height: 100%;
-  background-image: url(../images/hero-side-bg.png);
-  background-size: cover;
-}
+
 
 .sub_page .hero_area {
   height: auto;
@@ -583,6 +574,12 @@ a:focus {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+
 }
 
 .trending_section .img_container .box .img-box {
@@ -1117,9 +1114,12 @@ width:200px;
 }
 
 @media screen and (max-width: 600px) {
-#introVideovideo
-{height:250px;
-width:300px;}
+video {
+    top: 0%;
+    transform: translate(-50%, -50%);
+      height: auto;
+      min-height: 100%;
+  }
 
 #trendingImage{
   height: 140px;
@@ -1131,26 +1131,156 @@ width:300px;}
 }
 
 
+
+
 }
 
 
 
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
+video {
+    top: 0;
+    min-width: 100%;
+      min-height: 100%;
 
 }
 
+.hero_area
+{
+height:400px;
+}
 
+}
 
 @media screen and (min-width: 901px) {
-
-#introVideovideo {
-    height: 500px;
-    width: 700px;
-  }
 
 #trendingImage {
     height: 200px;
     width: 200px;
   }
+        video {
+          top: 0;
+          min-width: 100%;
+            min-height: 100%;
+
+        }
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+  /* Adjust the z-index to be higher than the video container */
+}
+
+
+
+.slider_section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+
+
+.product-image {
+
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+
+.product-image.show {
+  opacity: 1;
+}
+
+.product-image:hover {
+  transform: scale(1.1);
+}
+
+#trendingsection
+{
+  background-color: #D3D3D3;
+}
+
+#contactsection
+{
+  background-color: #D3D3D3;
+}
+
+.aboutusimage
+{
+  opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.aboutusimage.show {
+  opacity: 1;
+}
+
+h2
+{
+  margin-top:50px;
+}
+
+
+.brand-btn
+{
+  margin-bottom: 50px;
+}
+
+
+.overlay {
+  display: inline;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
 }

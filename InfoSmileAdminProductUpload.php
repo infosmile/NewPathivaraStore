@@ -6,6 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $productCategory = $_POST["productCategory"];
     $productPrice = $_POST["productPrice"];
     $productTag = $_POST["productTag"];
+    $productSpecs = $_POST["productSpecs"];
 
     // Process image upload
     $targetDir = "images/";
@@ -41,8 +42,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         die("Connection failed: " . $conn->connect_error);
                     }
 
-                    $sql = "INSERT INTO infosmilenewpathivaraproducts (ProductName, ProductCategory, ProductPrice, ProductImage, ProductTag)
-                            VALUES ('$productName', '$productCategory', '$productPrice', '" . basename($_FILES["productImage"]["name"]) . "', '$productTag')";
+                    $sql = "INSERT INTO infosmilenewpathivaraproducts (ProductName, ProductCategory, ProductPrice, ProductImage, ProductTag, specification)
+                            VALUES ('$productName', '$productCategory', '$productPrice', '" . basename($_FILES["productImage"]["name"]) . "', '$productTag', '$productSpecs')";
 
                     if ($conn->query($sql) === TRUE) {
                         echo "Data stored successfully.";

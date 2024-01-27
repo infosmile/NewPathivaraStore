@@ -101,8 +101,17 @@
             <label for="introvideo">introvideo:</label>
             <input type="text" id="introvideo" name="introvideo" value="" required>
 
+            <label for="introvideoheader">Intro Video Header:</label>
+            <input type="text" id="introvideoheader" name="introvideoheader" value="" required>
+
+            <label for="introvideomessage">Intro Video Message:</label>
+            <input type="text" id="introvideomessage" name="introvideomessage" value="" required>
+
             <label for="aboutus">aboutus:</label>
             <input id="aboutus" name="aboutus" rows="4" value="" required>
+
+            <label for="aboutusimage">aboutusImage:</label>
+            <input id="aboutusimage" name="aboutusimage" rows="4" value="" required>
         </div>
 
         <div>
@@ -135,8 +144,8 @@
 
         <div>
 
-            <label for="trendingImage1">trendingImage1:</label>
-            <input type="text" id="trendingImage1" name="trendingImage1" value="" required>
+            <label for="trendingImage1\r\n">trendingImage1:</label>
+            <input type="text" id="trendingImage1\r\n" name="trendingImage1\r\n" value="" required>
 
             <label for="trendingImage2">trendingImage2:</label>
             <input type="text" id="trendingImage2" name="trendingImage2" value="" required>
@@ -144,8 +153,6 @@
             <label for="trendingImage3">trendingImage3:</label>
             <input type="text" id="trendingImage3" name="trendingImage3" value="" required>
 
-            <label for="trendingImage4">trendingImage4:</label>
-            <input type="text" id="trendingImage4" name="trendingImage4" value="" required>
         </div>
 
         <div>
@@ -167,6 +174,9 @@
 
         <a href="InfoSmileAdminProductUpload.html" class="small-button">Add Products</a>
         <a href="../InfoSmileAdminProductView.php" class="small-button">View Products</a>
+        <a href="../logview.php?q=1" class="small-button">Orders</a>
+        <a href="../logview.php?q=2" class="small-button">Contact us</a>
+        <a href="../logview.php?q=3" class="small-button">Email Subscribers</a>
     </form>
   
 </body>
@@ -197,7 +207,6 @@
                 if (xhr.readyState === XMLHttpRequest.DONE) {
                     if (xhr.status === 200) {
                         const data = JSON.parse(xhr.responseText);
-                        console.log(data);
 
                         data.forEach(function (item, index) {
                             var element = document.getElementById(item.name);

@@ -53,61 +53,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
             var jsonData = JSON.parse(datastring);
              //logo Image
-             document.getElementById("MainLogoImg").src=getValueByName("mainlogo", jsonData);
-
-             //intro video
-             document.getElementById("introVideovideo").src=getValueByName("introvideo", jsonData);
-
-             document.getElementById("introvideoheader").innerHTML=getValueByName("introvideoheader", jsonData);
-             document.getElementById("introvideomessage").innerHTML=getValueByName("introvideomessage", jsonData);
-
-             //aboutus content
-             document.getElementById("aboutuscontent").innerHTML=getValueByName("aboutus", jsonData);
-             document.getElementById("aboutusimage").src=getValueByName("aboutusimage", jsonData);
-  
-             //testimonial-1-image
-            document.getElementById("testimonial-1-image").src=getValueByName("testimonial-1-image", jsonData);
-
-            //testimonial-1-name
-            document.getElementById("testimonial-1-name").innerHTML=getValueByName("testimonial-1-name", jsonData);
-
-            //testimonial-1-job
-            document.getElementById("testimonial-1-job").innerHTML=getValueByName("testimonial-1-job", jsonData);
-
-            //testimonial-1-comment
-            document.getElementById("testimonial-1-comment").innerHTML=getValueByName("testimonial-1-comment", jsonData);
-
-            //testimonial-2-image
-            document.getElementById("testimonial-2-image").src=getValueByName("testimonial-2-image", jsonData);
-
-            //testimonial-2-name
-            document.getElementById("testimonial-2-name").innerHTML=getValueByName("testimonial-2-name", jsonData);
-
-            //testimonial-2-job
-            document.getElementById("testimonial-2-job").innerHTML=getValueByName("testimonial-2-job", jsonData);
-
-            //testimonial-2-comment
-            document.getElementById("testimonial-2-comment").innerHTML=getValueByName("testimonial-2-comment", jsonData);
-
-           
-
-
-            //trendingImages
-            document.getElementById("product-1-image").src=getValueByName("trendingImage1\r\n", jsonData);
-            document.getElementById("product-2-image").src=getValueByName("trendingImage2", jsonData);
-            document.getElementById("product-3-image").src=getValueByName("trendingImage3", jsonData);
-
+         document.getElementById("MainLogoImg").src=getValueByName("mainlogo", jsonData);
 
             //aboutshop
+            
             document.getElementById("aboutshopaddress").innerHTML=getValueByName("aboutshopaddress", jsonData);
              document.getElementById("aboutshopphone").innerHTML=getValueByName("aboutshopphone", jsonData);
               document.getElementById("aboutshopemail").innerHTML=getValueByName("aboutshopemail", jsonData);
                document.getElementById("footerInformationContent").innerHTML=getValueByName("footerInformationContent", jsonData);
 
-               //googleMap
-               //document.getElementById("googleMap").src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=" + getValueByName("aboutshopaddress", jsonData);
-         document.getElementById("googleMap").src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=27%C2%B043%2715.0%22N%2085%C2%B021%2756.7%22E";
-              }
+       }
 
 
 
@@ -181,9 +136,8 @@ var htmlString = '<div class="brand_container layout_padding2">';
            
             for (var i = 0; i <jsonArray.length; i++) {
              var item = jsonArray[i];
-             
             htmlString += '<div class="box">' +
-  '<a href="">' +
+  '<a href="ProductBuy.php?pid='+ item.ProductId+'">' +
     '<div class="new">' +
       '<h5>' +
         'Mattress' +
@@ -242,7 +196,7 @@ var htmlString2 = '<div class="brand_container layout_padding2">';
              var item = jsonArray[i];
              
             htmlString2 += '<div class="box">' +
-  '<a href="">' +
+  '<a href="ProductBuy.php?pid='+ item.ProductId+'">' +
     '<div class="new">' +
       '<h5>' +
         'Curtains' +
@@ -299,7 +253,7 @@ var htmlString2 = '<div class="brand_container layout_padding2">';
              var item = jsonArray[i];
              
             htmlString2 += '<div class="box">' +
-  '<a href="">' +
+  '<a href="ProductBuy.php?pid='+ item.ProductId+'">' +
     '<div class="new">' +
       '<h5>' +
         'Others' +
@@ -356,7 +310,7 @@ var htmlString2 = '<div class="brand_container layout_padding2">';
              var item = jsonArray[i];
              
             htmlString2 += '<div class="box">' +
-    '<a href="ProductBuy.php?pid='+ item.ProductId+'">' +
+    '<a href="shop.html">' +
         '<div class="img-box">' +
             '<img id="feature-1-image" src="images/'+ item.ProductImage +'" alt="">' +
         '</div>' +
@@ -372,5 +326,5 @@ var htmlString2 = '<div class="brand_container layout_padding2">';
 '</div>';
 }
 
-document.getElementById("featuredItems").innerHTML = htmlString2+'</div>';
+
          }
