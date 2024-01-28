@@ -190,7 +190,7 @@ var htmlString = '<div class="brand_container layout_padding2">';
       '</h5>' +
     '</div>' +
     '<div class="img-box">' +
-      '<img src="images/' + item.ProductImage +'" alt="" >' +
+      '<img src="images/' + item.ProductImage +'" alt="Mattress In Kathmandu" >' +
     '</div>' +
     '<div class="detail-box">' +
       '<h6 class="price">' +
@@ -249,7 +249,7 @@ var htmlString2 = '<div class="brand_container layout_padding2">';
       '</h5>' +
     '</div>' +
     '<div class="img-box">' +
-      '<img src="images/' + item.ProductImage +'" alt="">' +
+      '<img src="images/' + item.ProductImage +'" alt="Curtains In Kathmandu">' +
     '</div>' +
     '<div class="detail-box">' +
       '<h6 class="price">' +
