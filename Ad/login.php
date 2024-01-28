@@ -23,7 +23,7 @@ echo $servername;
         // Match found, set cookies and redirect to index.php
         setcookie("pathivarausername", $inputUsername, time() + 3600, "/");
         setcookie("pathivarapassword", $inputPassword, time() + 3600, "/");
-        header("Location: index.html");
+        header("Location: admin.html");
     } else {
         // Invalid login, redirect back to login.html
         header("Location: login.html");
