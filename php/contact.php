@@ -81,7 +81,7 @@ $conn->close();
         <span class=\"close-btn\" onclick=\"closePopup()\">×</span>
         <h4>Thank you for Contacting us!</h4>
         <p>We we get back to you as soon as possible</p>
-        <a href=\"../Index.html\"><button>Ok</button></a>
+        <a href=\"../index.html\"><button>Ok</button></a>
     </div>
 </div>";;?>
 

@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Redirect back to the form after updating
-    header("Location: ../Index.html");
+    header("Location: ../index.html");
     exit();
 }
 

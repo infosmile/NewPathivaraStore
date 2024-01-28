@@ -38,7 +38,7 @@ $printMessage = "<div class=\"overlay\" id=\"popup\">
         <span class=\"close-btn\" onclick=\"closePopup()\">×</span>
         <h4>Thank you for placing your Order!</h4>
         <p>$postmessage</p>
-        <a href=\"Index.html\"><button>Ok</button></a>
+        <a href=\"index.html\"><button>Ok</button></a>
     </div>
 </div>";
 }
