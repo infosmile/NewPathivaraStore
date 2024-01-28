@@ -144,7 +144,7 @@ var htmlString = '<div class="brand_container layout_padding2">';
       '</h5>' +
     '</div>' +
     '<div class="img-box">' +
-      '<img src="images/' + item.ProductImage +'" alt="" >' +
+      '<img src="images/' + item.ProductImage +'" alt="Mattresses In Kathmandu" >' +
     '</div>' +
     '<div class="detail-box">' +
       '<h6 class="price">' +
