@@ -1,9 +1,21 @@
+
+var slideIndex1 = 0;
+var slideIndex2 = 0;
+    
 document.addEventListener('DOMContentLoaded', function () {
     var playButton = document.getElementById('playButtonLink');
     var videoContainer = document.getElementById('introVideo');
     var slideshow = document.getElementById('carousel-item');
     var video = document.getElementById('introVideovideo');
     var mainLogoImg = document.getElementById('MainLogoImg');
+
+
+  showmattressSlides();
+  showcurtainsSlides();
+
+    
+
+ 
 
     fetchDataAndDisplayAlert();
     fetchDataAndDisplayMattressProducts();
@@ -374,3 +386,65 @@ var htmlString2 = '<div class="brand_container layout_padding2">';
 
 document.getElementById("featuredItems").innerHTML = htmlString2+'</div>';
          }
+
+
+
+
+
+  function showmattressSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mymattressSlides");
+
+    // Hide all slides
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    // Move to the next slide
+    slideIndex1++;
+    if (slideIndex1 > slides.length) {
+      slideIndex1 = 1;
+    }
+
+    // Show the current slide
+    slides[slideIndex1 - 1].style.display = "block";
+
+    // Change slide every 3 seconds
+    setTimeout(showmattressSlides, 3000);
+  }
+  function plusmattressSlides(n) {
+    // Stop automatic sliding when navigating manually
+    clearTimeout(timer);
+    showmattressSlides(slideIndex1 += n);
+  }
+
+
+  function showcurtainsSlides() {
+    var j;
+    var slides = document.getElementsByClassName("mycurtainsSlides");
+
+    // Hide all slides
+    for (j = 0; j < slides.length; j++) {
+      slides[j].style.display = "none";
+    }
+
+    // Move to the next slide
+    slideIndex2++;
+    if (slideIndex2 > slides.length) {
+      slideIndex2 = 1;
+    }
+
+    // Show the current slide
+    slides[slideIndex2 - 1].style.display = "block";
+
+    // Change slide every 3 seconds
+    setTimeout(showcurtainsSlides, 3000);
+  }
+  function pluscurtainsSlides(n) {
+    // Stop automatic sliding when navigating manually
+    clearTimeout(timer);
+    showcurtainsSlides(slideIndex2 += n);
+  }
+
+  
+
