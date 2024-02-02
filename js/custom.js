@@ -1,6 +1,8 @@
 
 var slideIndex1 = 0;
 var slideIndex2 = 0;
+var slideIndex3 = 0;
+
     
 document.addEventListener('DOMContentLoaded', function () {
     var playButton = document.getElementById('playButtonLink');
@@ -12,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   showmattressSlides();
   showcurtainsSlides();
+  showflooringSlides();
+
 
     
 
@@ -108,6 +112,14 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById("product-1-image").src=getValueByName("trendingImage1\r\n", jsonData);
             document.getElementById("product-2-image").src=getValueByName("trendingImage2", jsonData);
             document.getElementById("product-3-image").src=getValueByName("trendingImage3", jsonData);
+
+            document.getElementById("product-4-image").src=getValueByName("trendingImage4\r\n", jsonData);
+            document.getElementById("product-5-image").src=getValueByName("trendingImage5", jsonData);
+            document.getElementById("product-6-image").src=getValueByName("trendingImage6", jsonData);
+
+            document.getElementById("product-7-image").src=getValueByName("trendingImage1\r\n", jsonData);
+            document.getElementById("product-8-image").src=getValueByName("trendingImage2", jsonData);
+            document.getElementById("product-9-image").src=getValueByName("trendingImage3", jsonData);
 
 
             //aboutshop
@@ -318,7 +330,7 @@ var htmlString2 = '<div class="brand_container layout_padding2">';
       '</h5>' +
     '</div>' +
     '<div class="img-box">' +
-      '<img src="images/' + item.ProductImage +'" alt="" >' +
+      '<img src="images/' + item.ProductImage +'" alt="newpathivarafurnishingcenter" >' +
     '</div>' +
     '<div class="detail-box">' +
       '<h6 class="price">' +
@@ -370,7 +382,7 @@ var htmlString2 = '<div class="brand_container layout_padding2">';
             htmlString2 += '<div class="box">' +
     '<a href="ProductBuy.php?pid='+ item.ProductId+'">' +
         '<div class="img-box">' +
-            '<img id="feature-1-image" src="images/'+ item.ProductImage +'" alt="">' +
+            '<img id="feature-1-image" src="images/'+ item.ProductImage +'" alt="newpathivarafurnishingcenterkathmandu">' +
         '</div>' +
         '<div class="detail-box">' +
             '<h6 class="price">' +
@@ -445,6 +457,36 @@ document.getElementById("featuredItems").innerHTML = htmlString2+'</div>';
     clearTimeout(timer);
     showcurtainsSlides(slideIndex2 += n);
   }
+
+
+
+  function showflooringSlides() {
+    var k;
+    var slides = document.getElementsByClassName("myflooringSlides");
+
+    // Hide all slides
+    for (k = 0; k < slides.length; k++) {
+      slides[k].style.display = "none";
+    }
+
+    // Move to the next slide
+    slideIndex3++;
+    if (slideIndex3 > slides.length) {
+      slideIndex3 = 1;
+    }
+
+    // Show the current slide
+    slides[slideIndex3 - 1].style.display = "block";
+
+    // Change slide every 3 seconds
+    setTimeout(showflooringSlides, 3000);
+  }
+  function plusflooringSlides(n) {
+    // Stop automatic sliding when navigating manually
+    clearTimeout(timer);
+    showflooringSlides(slideIndex2 += n);
+  }
+
 
   
 

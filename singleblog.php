@@ -154,10 +154,10 @@ $conn->close();
     <section>
         <article>
             <h2>
-                <img src="<?php echo $blogauthorimage; ?>" alt="Author 3" width="30" height="30">
+                <img src="<?php echo $blogauthorimage; ?>" alt="NewPathivaraFurnishingCenterBlogAuthor" width="30" height="30">
                 <?php echo $blogtitle; ?>
             </h2>
-            <img src="<?php echo "images/" . $blogimage; ?>" alt="" class="cover-image">
+            <img src="<?php echo "images/" . $blogimage; ?>" alt="NewPathivaraFurnishingCenterBlogImage" class="cover-image">
             <div class="meta-info">
                 <div class="author-info">
                     <span>By <?php echo $blogauthor; ?></span>

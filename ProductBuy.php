@@ -166,7 +166,7 @@ else
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
-            <img id="MainLogoImg" src="" alt="" />            
+            <img id="MainLogoImg" src="" alt="newpathivarafurnishingcenterlogo" />            
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -348,7 +348,7 @@ else
             </h5>
             <div>
               <div class="img-box">
-                <img src="images/location-white.png" width="18px" alt="">
+                <img src="images/location-white.png" width="18px" alt="newpathivarafurnishingcenterlocation">
               </div>
               <p id="aboutshopaddress">
                
@@ -356,7 +356,7 @@ else
             </div>
             <div>
               <div class="img-box">
-                <img src="images/telephone-white.png" width="12px" alt="">
+                <img src="images/telephone-white.png" width="12px" alt="newpathivarafurnishingcentercontact">
               </div>
               <p id="aboutshopphone">
                
@@ -364,7 +364,7 @@ else
             </div>
             <div>
               <div class="img-box">
-                <img src="images/envelope-white.png" width="18px" alt="">
+                <img src="images/envelope-white.png" width="18px" alt="newpathivarafurnishingcentercontact">
               </div>
               <p id="aboutshopemail">
                 
@@ -390,39 +390,39 @@ else
             </h5>
             <div class="insta_container">
               <div>
-                <a href="">
+                <a href="https://www.instagram.com/newpathivarafurnishingcenter?igsh=NTc4MTIwNjQ2YQ==">
                   <div class="insta-box b-1">
-                    <img src="images/i-1.jpg" alt="">
+                    <img src="images/i-1.jpg" alt="newpathivarafurnishingcenterinstagram">
                   </div>
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/newpathivarafurnishingcenter?igsh=NTc4MTIwNjQ2YQ==">
                   <div class="insta-box b-2">
-                    <img src="images/i-2.jpg" alt="">
+                    <img src="images/i-2.jpg" alt="newpathivarafurnishingcenterinstagram">
                   </div>
                 </a>
               </div>
 
               <div>
-                <a href="">
+                <a href="https://www.instagram.com/newpathivarafurnishingcenter?igsh=NTc4MTIwNjQ2YQ==">
                   <div class="insta-box b-3">
-                    <img src="images/i-3.jpg" alt="">
+                    <img src="images/i-3.jpg" alt="newpathivarafurnishingcenterinstagram">
                   </div>
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/newpathivarafurnishingcenter?igsh=NTc4MTIwNjQ2YQ==">
                   <div class="insta-box b-4">
-                    <img src="images/i-4.jpg" alt="">
+                    <img src="images/i-4.jpg" alt="newpathivarafurnishingcenterinstagram">
                   </div>
                 </a>
               </div>
               <div>
-                <a href="">
+                <a href="https://www.instagram.com/newpathivarafurnishingcenter?igsh=NTc4MTIwNjQ2YQ==">
                   <div class="insta-box b-3">
-                    <img src="images/i-5.jpg" alt="">
+                    <img src="images/i-5.jpg" alt="newpathivarafurnishingcenterinstagram">
                   </div>
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/newpathivarafurnishingcenter?igsh=NTc4MTIwNjQ2YQ==">
                   <div class="insta-box b-4">
-                    <img src="images/i-6.jpg" alt="">
+                    <img src="images/i-6.jpg" alt="newpathivarafurnishingcenterinstagram">
                   </div>
                 </a>
               </div>
@@ -441,17 +441,11 @@ else
               </button>
             </form>
             <div class="social_box">
-              <a href="https://www.facebook.com/rubal.sharma.90"> 
-                <img src="images/fb.png" alt="">
+              <a href="https://www.facebook.com/newpathivarafurnishingcenter"> 
+                <img src="images/fb.png" alt="newpathivarafurnishingcenterfacebook">
               </a>
-              <a href="">
-                <img src="images/twitter.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/linkedin.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/youtube.png" alt="">
+              <a href="https://www.youtube.com/@NewPathivaraFurnishingCenter">
+                <img src="images/youtube.png" alt="newpathivarafurnishingcenterinstagramyoutube">
               </a>
             </div>
           </div>

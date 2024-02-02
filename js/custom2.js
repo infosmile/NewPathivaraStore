@@ -203,7 +203,7 @@ var htmlString2 = '<div class="brand_container layout_padding2">';
       '</h5>' +
     '</div>' +
     '<div class="img-box">' +
-      '<img src="images/' + item.ProductImage +'" alt="">' +
+      '<img src="images/' + item.ProductImage +'" alt="curtainsinkathmandu">' +
     '</div>' +
     '<div class="detail-box">' +
       '<h6 class="price">' +
@@ -260,7 +260,7 @@ var htmlString2 = '<div class="brand_container layout_padding2">';
       '</h5>' +
     '</div>' +
     '<div class="img-box">' +
-      '<img src="images/' + item.ProductImage +'" alt="" >' +
+      '<img src="images/' + item.ProductImage +'" alt="newpathivarafurnishingcenterkathmandu" >' +
     '</div>' +
     '<div class="detail-box">' +
       '<h6 class="price">' +
@@ -312,7 +312,7 @@ var htmlString2 = '<div class="brand_container layout_padding2">';
             htmlString2 += '<div class="box">' +
     '<a href="shop.html">' +
         '<div class="img-box">' +
-            '<img id="feature-1-image" src="images/'+ item.ProductImage +'" alt="">' +
+            '<img id="feature-1-image" src="images/'+ item.ProductImage +'" alt="newpathivarafurnishingcenterkathmandu">' +
         '</div>' +
         '<div class="detail-box">' +
             '<h6 class="price">' +
